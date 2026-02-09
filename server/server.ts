@@ -1,11 +1,13 @@
 import express from 'express'
 import * as Path from 'node:path'
+import cors from 'cors'
 
 import cardsRoutes from './routes/cards.ts'
 
 const server = express()
 
 server.use(express.json())
+server.use(cors())
 
 server.use('/api/v1/cards', cardsRoutes)
 

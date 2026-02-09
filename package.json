@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^4.17.2",
     "knex": "^2.5.1",
     "prettier": "^3.8.1",
